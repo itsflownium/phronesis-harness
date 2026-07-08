@@ -67,9 +67,9 @@ Code is licensed under Apache-2.0. Putnam problem statements and official soluti
 ```bibtex
 @misc{phronesisHarness2026,
   title        = {Phronesis Harness},
-  author       = {Arhaan Desai},
+  author       = {Julian Flownium},
   year         = {2026},
   howpublished = {\url{https://github.com/itsflownium/phronesis-harness}},
-  note         = {GitHub repository},
+  note         = {GitHub repository. Published under the pseudonym Julian Flownium},
 }
 ```
