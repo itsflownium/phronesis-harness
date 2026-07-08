@@ -1,0 +1,153 @@
+{
+  "run_id": "qwen35_2021_dev_harness_balanced",
+  "status": "completed",
+  "updated_at": "2026-07-05T09:34:00+00:00",
+  "input": "data/dev_eval/putnam_2021_non_target_dev_inputs.jsonl",
+  "run_dir": "eval_runs/qwen35_2021_dev_harness_balanced",
+  "paths": {
+    "candidate_prompts": "eval_runs/qwen35_2021_dev_harness_balanced/candidate_prompts.jsonl",
+    "candidates": "eval_runs/qwen35_2021_dev_harness_balanced/candidates.jsonl",
+    "candidate_scores": "eval_runs/qwen35_2021_dev_harness_balanced/candidate_scores.jsonl",
+    "repairs": "eval_runs/qwen35_2021_dev_harness_balanced/repairs.jsonl",
+    "repair_scores": "eval_runs/qwen35_2021_dev_harness_balanced/repair_scores.jsonl",
+    "consolidations": "eval_runs/qwen35_2021_dev_harness_balanced/consolidations.jsonl",
+    "consolidation_scores": "eval_runs/qwen35_2021_dev_harness_balanced/consolidation_scores.jsonl",
+    "conclusion_extractions": "eval_runs/qwen35_2021_dev_harness_balanced/conclusion_extractions.jsonl",
+    "conclusion_clusters": "eval_runs/qwen35_2021_dev_harness_balanced/conclusion_clusters.jsonl",
+    "arithmetic_checks": "eval_runs/qwen35_2021_dev_harness_balanced/arithmetic_checks.jsonl",
+    "proof_breaks": "eval_runs/qwen35_2021_dev_harness_balanced/proof_breaks.jsonl",
+    "tournament_matches": "eval_runs/qwen35_2021_dev_harness_balanced/tournament_matches.jsonl",
+    "polished_proofs": "eval_runs/qwen35_2021_dev_harness_balanced/polished_proofs.jsonl",
+    "polished_scores": "eval_runs/qwen35_2021_dev_harness_balanced/polished_scores.jsonl",
+    "training_pairs": "eval_runs/qwen35_2021_dev_harness_balanced/training_pairs.jsonl",
+    "calibration_report": "eval_runs/qwen35_2021_dev_harness_balanced/calibration_report.json",
+    "calibration_markdown": "eval_runs/qwen35_2021_dev_harness_balanced/calibration_report.md",
+    "selections": "eval_runs/qwen35_2021_dev_harness_balanced/selections.jsonl",
+    "prompts": "eval_runs/qwen35_2021_dev_harness_balanced/prompts.jsonl",
+    "attempts": "eval_runs/qwen35_2021_dev_harness_balanced/attempts.jsonl",
+    "scores": "eval_runs/qwen35_2021_dev_harness_balanced/scores.jsonl",
+    "summary": "eval_runs/qwen35_2021_dev_harness_balanced/summary.json",
+    "harness_summary": "eval_runs/qwen35_2021_dev_harness_balanced/harness_summary.json",
+    "run_config": "eval_runs/qwen35_2021_dev_harness_balanced/run_config.json",
+    "validation_report": "eval_runs/qwen35_2021_dev_harness_balanced/validation_report.json"
+  },
+  "filters": {
+    "allow_target": false,
+    "max_problems": 0,
+    "problem_id": [],
+    "label": []
+  },
+  "models": {
+    "solver": "Qwen/Qwen3.5-35B-A3B",
+    "judge": "Qwen/Qwen3.5-35B-A3B",
+    "repair": "Qwen/Qwen3.5-35B-A3B",
+    "consolidator": "Qwen/Qwen3.5-35B-A3B",
+    "breaker": "Qwen/Qwen3.5-35B-A3B"
+  },
+  "base_urls": {
+    "default": "http://127.0.0.1:8000/v1",
+    "solver": "http://127.0.0.1:8001/v1",
+    "judge": "http://127.0.0.1:8001/v1",
+    "repair": "http://127.0.0.1:8001/v1",
+    "consolidator": "http://127.0.0.1:8001/v1",
+    "breaker": "http://127.0.0.1:8001/v1"
+  },
+  "prompts": {
+    "solver_prompt": "prompts/eval_solver_system_qwen_trackb_nomos_budget.md",
+    "solver_prompt_sha256": "10a40d51a25a54434e5f325a06f8f741e448477e5a6bf4bb5dddd72207d9e412",
+    "judge_prompt": "prompts/eval_judge_system.md",
+    "judge_prompt_sha256": "ab14b1dcda29f5ed0797dc545c8eed96deec0e0ef8bcf44dbdb655298056e7f6"
+  },
+  "budgets": {
+    "attempts_per_problem": 1,
+    "targeted_retries_per_problem": 1,
+    "repairs_per_problem": 1,
+    "top_candidates_for_consolidation": 2,
+    "breaker_top_n": 2,
+    "tournament_size": 2,
+    "solver_max_tokens": 16000,
+    "solver_cap_retry_on_capped": true,
+    "solver_cap_retry_max_tokens": 12000,
+    "solver_stop": [
+      "<END_PROOF>"
+    ],
+    "judge_max_tokens": 4096,
+    "repair_max_tokens": 12000,
+    "consolidator_max_tokens": 12000,
+    "time_limit_minutes": 0.0,
+    "max_total_model_calls": 0,
+    "estimated_model_calls_per_problem": {
+      "initial_attempts_and_judges": 2,
+      "targeted_retries_and_judges": 2,
+      "repair_breakers": 1,
+      "repairs_and_judges": 2,
+      "consolidation_and_judge": 2,
+      "consolidation_breaker": 0,
+      "consolidation_conclusion_extraction": 1,
+      "conclusion_extractions": 4,
+      "adversarial_breaks": 2,
+      "pairwise_tournament": 1,
+      "proof_polish_and_judge": 2,
+      "total_upper_bound": 19
+    }
+  },
+  "generation": {
+    "solver_temperature": 0.7,
+    "solver_top_p": 0.95,
+    "judge_temperature": 0.0,
+    "repair_temperature": 0.3,
+    "consolidator_temperature": 0.2,
+    "chat_format": "auto",
+    "extract_final_channel": false,
+    "gpt_oss_reasoning": "high",
+    "gpt_oss_solver_reasoning": "high",
+    "gpt_oss_judge_reasoning": "high",
+    "gpt_oss_repair_reasoning": "high",
+    "gpt_oss_consolidator_reasoning": "high",
+    "chat_template_kwargs": {
+      "solver": {
+        "enable_thinking": false
+      },
+      "solver_cap_retry": {
+        "enable_thinking": false
+      },
+      "judge": {
+        "enable_thinking": false
+      },
+      "repair": {
+        "enable_thinking": false
+      },
+      "consolidator": {
+        "enable_thinking": false
+      },
+      "breaker": {
+        "enable_thinking": false
+      }
+    }
+  },
+  "reasoning_harness": {
+    "mode": "eval",
+    "candidate_only": false,
+    "full_reasoning": true,
+    "extract_conclusions": true,
+    "adversarial_break": true,
+    "tournament": true,
+    "polish_final": true,
+    "manual_audit": "",
+    "enable_arithmetic_sanity_checks": true,
+    "conclusion_consensus_gate": true,
+    "require_breaker_for_repair": true,
+    "require_verified_capped_selection": true,
+    "strict_verified_selection_stages": true,
+    "require_breaker_for_selection_stages": false,
+    "expected_answers_path": "data/dev_eval/putnam_2021_expected_answers.json",
+    "expected_answers_count": 8
+  },
+  "strategies": [
+    {
+      "id": "decisive_direct",
+      "name": "Decisive direct proof",
+      "instruction": "Write a compact proof that identifies the main invariant, bound, or construction immediately. Avoid exploratory narration."
+    }
+  ]
+}

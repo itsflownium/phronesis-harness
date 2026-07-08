@@ -1,0 +1,12 @@
+[
+  {
+    "id": "decisive_direct",
+    "name": "Decisive direct proof",
+    "instruction": "Write a compact proof that identifies the main invariant, bound, or construction immediately. Avoid exploratory narration."
+  },
+  {
+    "id": "obstruction_construction",
+    "name": "Obstruction plus construction",
+    "instruction": "First prove the sharp obstruction or lower bound, then give the matching construction or equality case. Verify all boundary cases."
+  }
+]

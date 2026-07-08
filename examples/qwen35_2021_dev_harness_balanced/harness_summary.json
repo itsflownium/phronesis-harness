@@ -1,0 +1,220 @@
+{
+  "run_id": "qwen35_2021_dev_harness_balanced",
+  "created_at": "2026-07-05T09:34:00+00:00",
+  "harness_mode": "eval",
+  "full_reasoning": true,
+  "problem_count": 12,
+  "selected_problem_count": 12,
+  "candidate_rows": 21,
+  "repair_rows": 6,
+  "conclusion_rows": 36,
+  "conclusion_cluster_rows": 18,
+  "arithmetic_check_rows": 38,
+  "proof_break_rows": 21,
+  "tournament_match_rows": 7,
+  "polished_rows": 3,
+  "training_pair_rows": 0,
+  "candidate_cap_count": 4,
+  "repair_cap_count": 1,
+  "arithmetic_failure_count": 10,
+  "selection_gate_block_count": 3,
+  "forced_fallback_selection_count": 3,
+  "model_calls_made": 142,
+  "remaining_model_calls": null,
+  "budget_skips": {},
+  "estimated_model_calls_per_problem": {
+    "initial_attempts_and_judges": 2,
+    "targeted_retries_and_judges": 2,
+    "repair_breakers": 1,
+    "repairs_and_judges": 2,
+    "consolidation_and_judge": 2,
+    "consolidation_breaker": 0,
+    "consolidation_conclusion_extraction": 1,
+    "conclusion_extractions": 4,
+    "adversarial_breaks": 2,
+    "pairwise_tournament": 1,
+    "proof_polish_and_judge": 2,
+    "total_upper_bound": 19
+  },
+  "strict_summary": {
+    "scores_path": "eval_runs/qwen35_2021_dev_harness_balanced/scores.jsonl",
+    "rows": 12,
+    "completed_scores": 12,
+    "mean_score": 5.083333333333333,
+    "median_score": 3.5,
+    "score_scale": {
+      "min": 0,
+      "max": 10
+    },
+    "putnam_problem_count": 12,
+    "scored_problem_count": 12,
+    "putnam_total_score": 61,
+    "putnam_max_score": 120,
+    "putnam_total_score_out_of_120": 61,
+    "putnam_total_score_scaled_to_120": 61.0,
+    "putnam_aggregation": "best_score_per_problem",
+    "status_counts": {
+      "completed": 12
+    },
+    "score_histogram": {
+      "0": 3,
+      "2": 3,
+      "5": 1,
+      "10": 5
+    },
+    "failure_tag_counts": {
+      "algebra_geometry_status": 1,
+      "answer_key_uncertain": 4,
+      "audit_score_cap": 6,
+      "calculation_error": 3,
+      "candidate_selection_failure": 4,
+      "edge_case": 3,
+      "hidden_assumption": 4,
+      "incoherent_text": 1,
+      "incomplete_case_analysis": 1,
+      "incomplete_evaluation": 1,
+      "incomplete_proof": 3,
+      "incorrect_calculation_of_candidate": 1,
+      "invalid_lemma": 4,
+      "logical_gap": 1,
+      "missing_boundary_case": 1,
+      "missing_calculation": 1,
+      "missing_proof_of_lemma": 1,
+      "no_key_idea": 1,
+      "none": 5,
+      "theorem_use_status": 1,
+      "token_cap": 2,
+      "unjustified_assumption": 2,
+      "unsubstantiated_claim": 1,
+      "unsupported_lemma": 1,
+      "unsupported_theorem": 1
+    },
+    "per_problem": [
+      {
+        "problem_id": "putnam_2021_a1",
+        "attempts_scored": 1,
+        "mean_score": 10,
+        "best_score": 10,
+        "median_score": 10
+      },
+      {
+        "problem_id": "putnam_2021_a2",
+        "attempts_scored": 1,
+        "mean_score": 10,
+        "best_score": 10,
+        "median_score": 10
+      },
+      {
+        "problem_id": "putnam_2021_a3",
+        "attempts_scored": 1,
+        "mean_score": 10,
+        "best_score": 10,
+        "median_score": 10
+      },
+      {
+        "problem_id": "putnam_2021_a4",
+        "attempts_scored": 1,
+        "mean_score": 2,
+        "best_score": 2,
+        "median_score": 2
+      },
+      {
+        "problem_id": "putnam_2021_a5",
+        "attempts_scored": 1,
+        "mean_score": 10,
+        "best_score": 10,
+        "median_score": 10
+      },
+      {
+        "problem_id": "putnam_2021_a6",
+        "attempts_scored": 1,
+        "mean_score": 0,
+        "best_score": 0,
+        "median_score": 0
+      },
+      {
+        "problem_id": "putnam_2021_b1",
+        "attempts_scored": 1,
+        "mean_score": 0,
+        "best_score": 0,
+        "median_score": 0
+      },
+      {
+        "problem_id": "putnam_2021_b2",
+        "attempts_scored": 1,
+        "mean_score": 0,
+        "best_score": 0,
+        "median_score": 0
+      },
+      {
+        "problem_id": "putnam_2021_b3",
+        "attempts_scored": 1,
+        "mean_score": 10,
+        "best_score": 10,
+        "median_score": 10
+      },
+      {
+        "problem_id": "putnam_2021_b4",
+        "attempts_scored": 1,
+        "mean_score": 5,
+        "best_score": 5,
+        "median_score": 5
+      },
+      {
+        "problem_id": "putnam_2021_b5",
+        "attempts_scored": 1,
+        "mean_score": 2,
+        "best_score": 2,
+        "median_score": 2
+      },
+      {
+        "problem_id": "putnam_2021_b6",
+        "attempts_scored": 1,
+        "mean_score": 2,
+        "best_score": 2,
+        "median_score": 2
+      }
+    ]
+  },
+  "selection_scores": {
+    "putnam_2021_a1": 10,
+    "putnam_2021_a2": 10,
+    "putnam_2021_a3": 10,
+    "putnam_2021_a4": 2,
+    "putnam_2021_a5": 10,
+    "putnam_2021_a6": 0,
+    "putnam_2021_b1": 0,
+    "putnam_2021_b2": 0,
+    "putnam_2021_b3": 10,
+    "putnam_2021_b4": 5,
+    "putnam_2021_b5": 2,
+    "putnam_2021_b6": 2
+  },
+  "paths": {
+    "candidate_prompts": "eval_runs/qwen35_2021_dev_harness_balanced/candidate_prompts.jsonl",
+    "candidates": "eval_runs/qwen35_2021_dev_harness_balanced/candidates.jsonl",
+    "candidate_scores": "eval_runs/qwen35_2021_dev_harness_balanced/candidate_scores.jsonl",
+    "repairs": "eval_runs/qwen35_2021_dev_harness_balanced/repairs.jsonl",
+    "repair_scores": "eval_runs/qwen35_2021_dev_harness_balanced/repair_scores.jsonl",
+    "consolidations": "eval_runs/qwen35_2021_dev_harness_balanced/consolidations.jsonl",
+    "consolidation_scores": "eval_runs/qwen35_2021_dev_harness_balanced/consolidation_scores.jsonl",
+    "conclusion_extractions": "eval_runs/qwen35_2021_dev_harness_balanced/conclusion_extractions.jsonl",
+    "conclusion_clusters": "eval_runs/qwen35_2021_dev_harness_balanced/conclusion_clusters.jsonl",
+    "arithmetic_checks": "eval_runs/qwen35_2021_dev_harness_balanced/arithmetic_checks.jsonl",
+    "proof_breaks": "eval_runs/qwen35_2021_dev_harness_balanced/proof_breaks.jsonl",
+    "tournament_matches": "eval_runs/qwen35_2021_dev_harness_balanced/tournament_matches.jsonl",
+    "polished_proofs": "eval_runs/qwen35_2021_dev_harness_balanced/polished_proofs.jsonl",
+    "polished_scores": "eval_runs/qwen35_2021_dev_harness_balanced/polished_scores.jsonl",
+    "training_pairs": "eval_runs/qwen35_2021_dev_harness_balanced/training_pairs.jsonl",
+    "calibration_report": "eval_runs/qwen35_2021_dev_harness_balanced/calibration_report.json",
+    "calibration_markdown": "eval_runs/qwen35_2021_dev_harness_balanced/calibration_report.md",
+    "selections": "eval_runs/qwen35_2021_dev_harness_balanced/selections.jsonl",
+    "prompts": "eval_runs/qwen35_2021_dev_harness_balanced/prompts.jsonl",
+    "attempts": "eval_runs/qwen35_2021_dev_harness_balanced/attempts.jsonl",
+    "scores": "eval_runs/qwen35_2021_dev_harness_balanced/scores.jsonl",
+    "summary": "eval_runs/qwen35_2021_dev_harness_balanced/summary.json",
+    "harness_summary": "eval_runs/qwen35_2021_dev_harness_balanced/harness_summary.json",
+    "run_config": "eval_runs/qwen35_2021_dev_harness_balanced/run_config.json",
+    "validation_report": "eval_runs/qwen35_2021_dev_harness_balanced/validation_report.json"
+  }
+}

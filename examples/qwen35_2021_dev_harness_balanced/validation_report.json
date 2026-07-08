@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-07-05T09:34:00+00:00",
+  "ok": true,
+  "results": [
+    {
+      "command": [
+        "/opt/phronesis-venv/bin/python3",
+        "/root/phronesis/scripts/validate_artifact_schema.py",
+        "eval-prompts",
+        "eval_runs/qwen35_2021_dev_harness_balanced/prompts.jsonl",
+        "--source",
+        "data/dev_eval/putnam_2021_non_target_dev_inputs.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "validated kind=eval-prompts path=eval_runs/qwen35_2021_dev_harness_balanced/prompts.jsonl rows=12 errors=0 warnings=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/phronesis-venv/bin/python3",
+        "/root/phronesis/scripts/validate_artifact_schema.py",
+        "eval-attempts",
+        "eval_runs/qwen35_2021_dev_harness_balanced/attempts.jsonl",
+        "--source",
+        "eval_runs/qwen35_2021_dev_harness_balanced/prompts.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "validated kind=eval-attempts path=eval_runs/qwen35_2021_dev_harness_balanced/attempts.jsonl rows=12 errors=0 warnings=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/phronesis-venv/bin/python3",
+        "/root/phronesis/scripts/validate_artifact_schema.py",
+        "eval-scores",
+        "eval_runs/qwen35_2021_dev_harness_balanced/scores.jsonl",
+        "--source",
+        "eval_runs/qwen35_2021_dev_harness_balanced/attempts.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "validated kind=eval-scores path=eval_runs/qwen35_2021_dev_harness_balanced/scores.jsonl rows=12 errors=0 warnings=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/phronesis-venv/bin/python3",
+        "/root/phronesis/scripts/validate_artifact_schema.py",
+        "eval-summary",
+        "eval_runs/qwen35_2021_dev_harness_balanced/summary.json"
+      ],
+      "returncode": 0,
+      "stdout": "validated kind=eval-summary path=eval_runs/qwen35_2021_dev_harness_balanced/summary.json rows=0 errors=0 warnings=0\n",
+      "stderr": ""
+    }
+  ]
+}
