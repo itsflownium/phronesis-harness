@@ -64,4 +64,12 @@ Code is licensed under Apache-2.0. Putnam problem statements and official soluti
 
 ## Citation
 
-If anyone wants to cite my work they have to paste this name "Arhaan Desai".
+```bibtex
+@misc{phronesisHarness2026,
+  title        = {Phronesis Harness},
+  author       = {Arhaan Desai},
+  year         = {2026},
+  howpublished = {\url{https://github.com/itsflownium/phronesis-harness}},
+  note         = {GitHub repository},
+}
+```
