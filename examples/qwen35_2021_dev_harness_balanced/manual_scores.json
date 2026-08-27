@@ -1,0 +1,31 @@
+{
+  "run_id": "qwen35_2021_dev_harness_balanced",
+  "exam": "William Lowell Putnam Mathematical Competition 2021",
+  "split": "non-target dev gate",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "system": "Phronesis full solver harness",
+  "problem_count": 12,
+  "max_score": 120,
+  "automated_harness_score": 61,
+  "manual_official_style_score": 62,
+  "manual_score_range": [60, 64],
+  "model_calls": 142,
+  "attempts_per_problem": 1,
+  "problem_specific_hints": false,
+  "official_solutions_exposed_to_model": false,
+  "scoring_note": "This is a manual official-style audit against the published solutions, not an official MAA adjudication.",
+  "problems": [
+    {"id": "A1", "automated_score": 10, "manual_score": 10},
+    {"id": "A2", "automated_score": 10, "manual_score": 10},
+    {"id": "A3", "automated_score": 10, "manual_score": 8},
+    {"id": "A4", "automated_score": 2, "manual_score": 1},
+    {"id": "A5", "automated_score": 10, "manual_score": 10},
+    {"id": "A6", "automated_score": 0, "manual_score": 0},
+    {"id": "B1", "automated_score": 0, "manual_score": 0},
+    {"id": "B2", "automated_score": 0, "manual_score": 0},
+    {"id": "B3", "automated_score": 10, "manual_score": 10},
+    {"id": "B4", "automated_score": 5, "manual_score": 4},
+    {"id": "B5", "automated_score": 2, "manual_score": 8},
+    {"id": "B6", "automated_score": 2, "manual_score": 1}
+  ]
+}

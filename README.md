@@ -41,13 +41,19 @@ The included example config/result summary comes from a Putnam 2021 dev run with
 - KV cache: `BF16`
 - Hints/solutions in prompt: none
 
-Result:
+**Manual official-style score: 62/120**
+
+![Putnam 2021 per-problem benchmark scores](assets/benchmarks/qwen35-2021-dev-harness.svg)
+
+Result details:
 
 - Harness-selected score: `61/120`
-- Manual-audited estimate: about `62/120`
+- Manual-audited score: **`62/120`**
 - Reasonable manual uncertainty band: `60-64/120`
+- Problems completed: `12/12`
+- Total model calls: `142`
 
-The score is not an official Putnam score. It is a research benchmark result from the harness plus a manual audit of the selected proofs.
+Every selected proof was compared with the published Putnam 2021 answers and solutions. The score is not an official MAA adjudication; it is a research benchmark result from an independent official-style manual audit. See the [proof-by-proof audit](examples/qwen35_2021_dev_harness_balanced/MANUAL_AUDIT.md) and [machine-readable manual scores](examples/qwen35_2021_dev_harness_balanced/manual_scores.json).
 
 ## Files
 
@@ -57,6 +63,7 @@ The score is not an official Putnam score. It is a research benchmark result fro
 - `scripts/validate_artifact_schema.py`: artifact validation
 - `prompts/`: prompt and strategy files used by the run
 - `examples/qwen35_2021_dev_harness_balanced/`: run config and summarized artifacts for the reported benchmark
+- `scripts/render_benchmark_chart.py`: deterministic SVG benchmark-chart generator
 
 ## License
 
